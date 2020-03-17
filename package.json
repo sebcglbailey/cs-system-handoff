@@ -15,6 +15,9 @@
     "sketch-assets-file": "sketch-assets/icons.sketch"
   },
   "scripts": {
+    "build:major": "skpm-build && npm version major",
+    "build:minor": "skpm-build && npm version minor",
+    "build:patch": "skpm-build && npm version patch",
     "build": "skpm-build",
     "watch": "skpm-build --watch",
     "start": "skpm-build --watch --run",
