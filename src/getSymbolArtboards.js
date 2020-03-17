@@ -20,31 +20,19 @@ let textStyles = [];
 
 const iterateLayers = (layers, index) => {
   layers.forEach((layer, index) => {
-    if (layer.layers) {
+    if (layer.type == "Page") {
       iterateLayers(layer.layers);
     }
 
-    if (layer.type == "SymbolInstance") {
-      let symbolName = String(layer.sketchObject.symbolMaster().name());
+    if (layer.type == "SymbolMaster") {
+      let symbolName = layer.name;
 
       let filter = LIBRARIES[libraryCheck].filter(symbol => {
         return symbol.names.includes(symbolName);
       });
 
-      if (filter.length == 0 && !symbols.includes(symbolName)) {
+      if (filter.length == 0 || !symbols.includes(symbolName)) {
         symbols.push(symbolName);
-      }
-    }
-
-    if (layer.type == "Text" && libraryCheck == LIBRARIES.CSText) {
-      let styleName = String(layer.sharedStyle.name);
-
-      let filter = LIBRARIES["CSText"].filter(text => {
-        return styleName.includes(text.name);
-      });
-
-      if (filter.length == 0 && !textStyles.includes(styleName)) {
-        textStyles.push(styleName);
       }
     }
   });
@@ -52,7 +40,7 @@ const iterateLayers = (layers, index) => {
 
 const chooseLibrary = () => {
   UI.getInputFromUser(
-    "Which library do you want to rename your layers to?",
+    "Which library do you want to reference?",
     {
       type: UI.INPUT_TYPE.selection,
       possibleValues: Object.keys(LIBRARIES),
@@ -74,11 +62,7 @@ const chooseLibrary = () => {
         selectedLayers && selectedLayers.length > 0 ? selectedLayers : pages
       );
 
-      if (value == LIBRARIES.CSText) {
-        console.log(textStyles.join(" /// "));
-      } else {
-        console.log(symbols.join(" /// "));
-      }
+      console.log(symbols.join(" /// "));
     }
   );
 };

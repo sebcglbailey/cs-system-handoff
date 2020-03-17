@@ -8,16 +8,22 @@
       "script": "./my-command.js"
     },
     {
-        "name": "Get symbol IDs",
-        "identifier": "{{ slug }}.get-symbol-ids-identifier",
-        "script": "./getSymbols.js"
-      }
+      "name": "Get imported symbol names",
+      "identifier": "{{ slug }}.get-imported-symbol-names-identifier",
+      "script": "./getSymbols.js"
+    },
+    {
+      "name": "Get symbol master names",
+      "identifier": "{{ slug }}.get-symbol-master-names-identifier",
+      "script": "./getSymbolArtboards.js"
+    }
   ],
   "menu": {
     "title": "cs-system-handoff",
     "items": [
       "{{ slug }}.my-command-identifier",
-      "{{ slug }}.get-symbol-ids-identifier"
+      "{{ slug }}.get-imported-symbol-names-identifie",
+      "{{ slug }}.get-symbol-master-names-identifier"
     ]
   }
 }
