@@ -34,8 +34,7 @@ const iterateLayers = (layers, index) => {
 
     // Get the original symbol name & id
     if (layer.type == "SymbolInstance") {
-      let symbolName = String(layer.sketchObject.symbolMaster().name());
-      let id = layer.symbolId;
+      let symbolName = layer.sketchObject.symbolMaster() ? String(layer.sketchObject.symbolMaster().name()) : null;
 
       let filter = LIBRARIES[libraryCheck].filter(symbol => {
         return symbol.names.includes(symbolName);
@@ -46,9 +45,10 @@ const iterateLayers = (layers, index) => {
         filter[0].componentName &&
         filter[0].componentName.length > 0
       ) {
+        // console.log(filter[0].componentName)
         layer.name = filter[0].componentName;
       }
-    } else if (layer.type == "Text") {
+    } else if (layer.type == "Text" && libraryCheck == LIBRARIES[CSText]) {
       if (!layer.sharedStyle) {
         return;
       }
@@ -90,15 +90,16 @@ const chooseLibrary = () => {
       let document = sketch.Document.getSelectedDocument();
       let pages = document.pages;
       let selectedLayers = document.selectedLayers;
+      let selectedPage = document.selectedPage;
 
       // Iterate over all pages
       iterateLayers(
-        selectedLayers && selectedLayers.length > 0 ? selectedLayers : pages
+        selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage && selectedPage.length > 0 ? selectedPage : pages
       );
     }
   );
 };
 
-export default function(context) {
+export default function (context) {
   chooseLibrary();
 }

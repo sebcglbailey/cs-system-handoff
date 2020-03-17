@@ -5,7 +5,7 @@
     {
       "name": "Rename layers",
       "identifier": "{{ slug }}.my-command-identifier",
-      "script": "./my-command.js"
+      "script": "./renameLayers.js"
     },
     {
       "name": "Get imported symbol names",
