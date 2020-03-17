@@ -2,26 +2,15 @@ import sketch from "sketch/dom";
 import UI from "sketch/ui";
 // documentation: https://developer.sketchapp.com/reference/api/
 
-import CSWeb from "./modules/CSWeb";
-import CSiOS from "./modules/CSiOS";
-import CSAndroid from "./modules/CSAndroid";
-import CSText from "./modules/CSText";
-
-const LIBRARIES = {
-  WebApp: CSWeb,
-  CSiOS: CSiOS,
-  CSAndroid: CSAndroid,
-  CSText: CSText
-};
+import LIBRARIES from './helpers/libraries';
+import chooseLibrary from './helpers/chooseLibrary';
 
 let libraryCheck = "WebApp";
 
 const iterateLayers = (layers, index) => {
-  // layers = layers.filter((sub, index) => {
-  //     return sub.type == "SymbolInstance" || sub.type == "Group" || sub.type == "Artboard" || sub.type == "Page" || sub.type == "SymbolMaster"
-  // })
 
   layers.forEach((layer, index) => {
+
     if (layer.layers) {
       iterateLayers(layer.layers);
       return;
@@ -48,7 +37,7 @@ const iterateLayers = (layers, index) => {
         // console.log(filter[0].componentName)
         layer.name = filter[0].componentName;
       }
-    } else if (layer.type == "Text" && libraryCheck == LIBRARIES[CSText]) {
+    } else if (layer.type == "Text" && libraryCheck == "CSText") {
       if (!layer.sharedStyle) {
         return;
       }
@@ -72,34 +61,20 @@ const iterateLayers = (layers, index) => {
   });
 };
 
-const chooseLibrary = () => {
-  UI.getInputFromUser(
-    "Which library do you want to rename your layers to?",
-    {
-      type: UI.INPUT_TYPE.selection,
-      possibleValues: Object.keys(LIBRARIES),
-      initialValue: libraryCheck
-    },
-    (err, value) => {
-      if (err) {
-        return;
-      }
+export default function (context) {
 
-      libraryCheck = value;
+  let document = sketch.Document.getSelectedDocument();
+  let pages = document.pages;
+  let selectedLayers = document.selectedLayers;
+  let selectedPage = document.selectedPage;
 
-      let document = sketch.Document.getSelectedDocument();
-      let pages = document.pages;
-      let selectedLayers = document.selectedLayers;
-      let selectedPage = document.selectedPage;
+  chooseLibrary(
+    (library) => {
+      libraryCheck = library
 
-      // Iterate over all pages
-      iterateLayers(
-        selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage && selectedPage.length > 0 ? selectedPage : pages
-      );
+      let layers = selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage ? selectedPage.layers : pages
+
+      iterateLayers(layers)
     }
   );
-};
-
-export default function (context) {
-  chooseLibrary();
 }
