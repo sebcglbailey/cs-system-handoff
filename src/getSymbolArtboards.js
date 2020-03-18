@@ -6,12 +6,8 @@ import CSiOS from "./modules/CSiOS";
 import CSAndroid from "./modules/CSAndroid";
 import CSText from "./modules/CSText";
 
-const LIBRARIES = {
-  WebApp: CSWeb,
-  CSiOS: CSiOS,
-  CSAndroid: CSAndroid,
-  CSText: CSText
-};
+import chooseLibrary from './helpers/chooseLibrary';
+import LIBRARIES from './helpers/libraries';
 
 let libraryCheck = "WebApp";
 
@@ -38,37 +34,28 @@ const iterateLayers = (layers, index) => {
   });
 };
 
-const chooseLibrary = () => {
-  UI.getInputFromUser(
-    "Which library do you want to reference?",
-    {
-      type: UI.INPUT_TYPE.selection,
-      possibleValues: Object.keys(LIBRARIES),
-      initialValue: libraryCheck
-    },
-    (err, value) => {
-      if (err) {
-        return;
+export default function (context) {
+
+  let document = sketch.Document.getSelectedDocument();
+  let pages = document.pages;
+  let selectedLayers = document.selectedLayers;
+  let selectedPage = document.selectedPage;
+
+  chooseLibrary(
+    (library) => {
+      libraryCheck = library
+
+      let layers = selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage ? selectedPage.layers : pages
+
+      iterateLayers(layers)
+
+      UI.message("Check the console – 💎 Sketch dev tools");
+
+      if (library == "CSText") {
+        console.log(textStyles.join(" /// "));
+      } else {
+        console.log(symbols.join(" /// "));
       }
-
-      libraryCheck = value;
-
-      let document = sketch.Document.getSelectedDocument();
-      let pages = document.pages;
-      let selectedLayers = document.selectedLayers;
-
-      // Iterate over all pages
-      iterateLayers(
-        selectedLayers && selectedLayers.length > 0 ? selectedLayers : pages
-      );
-
-      console.log(symbols.join(" /// "));
     }
   );
-};
-
-export default function(context) {
-  UI.message("Check the console – 💎 Sketch dev tools");
-
-  chooseLibrary();
 }
