@@ -42,7 +42,6 @@ const iterateLayers = (layers, index) => {
 };
 
 export default function (context) {
-    UI.message("Check the console – 💎 Sketch dev tools");
 
     let document = sketch.Document.getSelectedDocument();
     let pages = document.pages;
@@ -56,6 +55,8 @@ export default function (context) {
             let layers = selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage ? selectedPage.layers : pages
 
             iterateLayers(layers)
+
+            UI.message("Check the console – 💎 Sketch dev tools");
 
             if (library == "CSText") {
                 console.log(textStyles.join(" /// "));

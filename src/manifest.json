@@ -22,7 +22,7 @@
     "title": "cs-system-handoff",
     "items": [
       "{{ slug }}.my-command-identifier",
-      "{{ slug }}.get-imported-symbol-names-identifie",
+      "{{ slug }}.get-imported-symbol-names-identifier",
       "{{ slug }}.get-symbol-master-names-identifier"
     ]
   }

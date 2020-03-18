@@ -5,7 +5,7 @@ import LIBRARIES from './libraries';
 
 const chooseLibrary = (callback) => {
     UI.getInputFromUser(
-        "Which library do you want to rename your layers to?",
+        "Which library do you want to reference?",
         {
             type: UI.INPUT_TYPE.selection,
             possibleValues: Object.keys(LIBRARIES),
