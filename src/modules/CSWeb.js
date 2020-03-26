@@ -390,6 +390,7 @@ const symbols = [
 			"Navigation/_SecondaryNav/M",
 			"Navigation/_SecondaryNav/L",
 			"Navigation/_SecondaryNav/XL",
+		]
 	},
 	{
 		componentName: "MultiSelect",
