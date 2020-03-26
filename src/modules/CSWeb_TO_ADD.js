@@ -231,4 +231,17 @@ const CSWeb_TO_ADD = [
 	"Payment history/M",
 	"Payment history/L",
 	"Payment history/XL",
+
+	"Navigation/🚫 overrides/_SecondaryNav/Options/Back",
+	"Navigation/🚫 overrides/_SecondaryNav/Options/Right",
+	"Navigation/🚫 overrides/_SecondaryNav/Options/Center",
+	"Navigation/🚫 overrides/_SecondaryNav/Options/_Left",
+	"Navigation/🚫 overrides/_SecondaryNav/MenuItem/Active",
+	"Navigation/🚫 overrides/_SecondaryNav/MenuItem/_Default",
+
+	"Navigation/🚫 overrides/__PrimaryNav/Options/XS - S",
+	"Navigation/🚫 overrides/__PrimaryNav/Options/M-XL",
+	"Navigation/🚫 overrides/Blur Overlay",
+	"Navigation/🚫 overrides/__PrimaryNav/XS-S/Icon",
+	"Navigation/🚫 overrides/_MyAccountMenu/Content",
 ];
