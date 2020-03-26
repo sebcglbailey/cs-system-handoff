@@ -383,14 +383,13 @@ const symbols = [
 	{
 		componentName: "MenuSecondary",
 		names: [
-			"Menu/02 Secondary/04 XS-S/04 No scroll",
-			"Menu/02 Secondary/04 XS-S/03 Right aligned",
-			"Menu/02 Secondary/04 XS-S/02 Center aligned",
-			"Menu/02 Secondary/04 XS-S/01 Left aligned",
-			"Menu/02 Secondary/03 M",
-			"Menu/02 Secondary/02 L",
-			"Menu/02 Secondary/01 XL",
-		]
+			"Navigation/_SecondaryNav/_XS-S/No scroll",
+			"Navigation/_SecondaryNav/_XS-S/Right aligned",
+			"Navigation/_SecondaryNav/_XS-S/Center aligned",
+			"Navigation/_SecondaryNav/_XS-S/Left aligned",
+			"Navigation/_SecondaryNav/M",
+			"Navigation/_SecondaryNav/L",
+			"Navigation/_SecondaryNav/XL",
 	},
 	{
 		componentName: "MultiSelect",
@@ -827,6 +826,62 @@ const symbols = [
 			"Form/Checkbox/Switch/__Light/With Description [Disabled]",
 			"Form/Checkbox/Switch/_Dark/Compact [Disabled]",
 			"Form/Checkbox/Switch/__Light/Compact [Disabled]",
+		]
+	},
+	{
+		componentName: "PrimaryNav",
+		names: [
+			"Navigation/__PrimaryNav/_XS-S [Header]",
+			"Navigation/__PrimaryNav/M",
+			"Navigation/__PrimaryNav/L",
+			"Navigation/__PrimaryNav/XL",
+			"Navigation/__PrimaryNav/_XS-S [Menu]",
+		]
+	},
+	{
+		componentName: "MenuItem",
+		names: [
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Dashboard/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Dashboard/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Report/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Report/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Offers/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Offers/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Protect/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Protect/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Timeline/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Timeline/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Coaching/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Coaching/Active",
+			"Navigation /🚫 overrides / __PrimaryNav / MenuItem / XS - S / Dashboard / _Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Dashboard/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Report/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Report/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Offers/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Offers/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Protect/_Default",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/My Account/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Protect/Active",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/Account drawer/My Account/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Timeline/_Default",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/Account drawer/Help/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Timeline/Active",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/Account drawer/Help/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Coaching/_Default",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/Account drawer/Log out/_Default",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Coaching/Active",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/Account drawer/Log out/Active",
+			"Navigation/🚫 overrides/MyAccountItem/L-XL",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/_Template",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/_Template",
+		]
+	},
+	{
+		componentName: "MyAccountMenu",
+		names: [
+			"Navigation/_MyAccountMenu/_XS-S",
+			"Navigation/_MyAccountMenu/M",
+			"Navigation/_MyAccountMenu/L - XL",
 		]
 	}
 ];
