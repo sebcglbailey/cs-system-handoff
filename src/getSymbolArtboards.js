@@ -27,7 +27,7 @@ const iterateLayers = (layers, index) => {
         return symbol.names.includes(symbolName);
       });
 
-      if (filter.length == 0 || !symbols.includes(symbolName)) {
+      if (filter.length == 0 && !symbols.includes(symbolName)) {
         symbols.push(symbolName);
       }
     }

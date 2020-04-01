@@ -1,6 +1,6 @@
 const symbols = [
 	{
-		componentName: "Accordion",
+		componentName: "🌈 Accordion",
 		names: [
 			"Accordion/01 Header/02 XS-S/03 Text Only/Basic",
 			"Accordion/01 Header/02 XS-S/03 Text Only/Description",
@@ -18,14 +18,14 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Accordion.ContentSection",
+		componentName: "🌈 Accordion.ContentSection",
 		names: [
 			"Accordion/02 Content/04 Details/02 XS-S",
 			"Accordion/02 Content/04 Details/01 M-XL"
 		]
 	},
 	{
-		componentName: "Accordion.ContentAccordion",
+		componentName: "🌈 Accordion.ContentAccordion",
 		names: [
 			"Accordion/02 Content/03 Content Accordion/02 XS-S/01 Closed",
 			"Accordion/02 Content/03 Content Accordion/02 XS-S/02 Open",
@@ -34,7 +34,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Accordion.ContentAccordionList",
+		componentName: "🌈 Accordion.ContentAccordionList",
 		names: [
 			"Accordion/02 Content/03 Content Accordion/02 XS-S/04 Content Open",
 			"Accordion/02 Content/03 Content Accordion/02 XS-S/03 Content",
@@ -43,7 +43,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Autosuggest",
+		componentName: "🌈 Autosuggest",
 		names: [
 			"Form/_field/Filter options/__Light/Active",
 			"Form/_field/Filter options/__Light/Dirty",
@@ -54,146 +54,194 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Button",
+		componentName: "🌈 Button: Primary",
 		names: [
-			"Button/_Tertiary/Large/_Dark/Loading",
-			"Button/_Tertiary/Tiny/_Dark/Hover - Active [Smart]",
-			"Button/_Tertiary/Tiny/__Light/Hover - Active [Smart]",
-			"Button/_Secondary/Tiny/_Dark/Hover - Active [Smart]",
-			"Button/_Secondary/Tiny/__Light/Hover - Active [Smart]",
-			"Button/__Primary/Tiny/_Dark/Hover - Active [Smart]",
-			"Button/__Primary/Tiny/__Light/Hover - Active [Smart]",
-			"Button/_Tertiary/Tiny/_Dark/Disabled [Smart]",
-			"Button/_Tertiary/Tiny/__Light/Disabled [Smart]",
-			"Button/_Secondary/Tiny/_Dark/Disabled [Smart]",
-			"Button/_Secondary/Tiny/__Light/Disabled [Smart]",
+			"Button/__Primary/Tiny/_Dark/Hover – Active [Smart]",
+			"Button/__Primary/Tiny/__Light/Hover – Active [Smart]",
 			"Button/__Primary/Tiny/_Dark/Disabled [Smart]",
 			"Button/__Primary/Tiny/__Light/Disabled [Smart]",
-			"Button/_Tertiary/Tiny/_Dark/_Default [Smart]",
-			"Button/_Tertiary/Tiny/__Light/_Default [Smart]",
-			"Button/_Secondary/Tiny/_Dark/_Default [Smart]",
-			"Button/_Secondary/Tiny/__Light/_Default [Smart]",
 			"Button/__Primary/Tiny/_Dark/_Default [Smart]",
 			"Button/__Primary/Tiny/__Light/_Default [Smart]",
-			"Button/_Tertiary/Small/_Dark/Hover - Active [Smart]",
-			"Button/_Tertiary/Small/__Light/Hover - Active [Smart]",
-			"Button/_Secondary/Small/_Dark/Hover - Active [Smart]",
-			"Button/_Secondary/Small/__Light/Hover - Active [Smart]",
-			"Button/__Primary/Small/_Dark/Hover - Active [Smart]",
-			"Button/__Primary/Small/__Light/Hover - Active [Smart]",
-			"Button/_Tertiary/Small/_Dark/Disabled [Smart]",
-			"Button/_Tertiary/Small/__Light/Disabled [Smart]",
-			"Button/_Secondary/Small/_Dark/Disabled [Smart]",
-			"Button/_Secondary/Small/__Light/Disabled [Smart]",
+			"Button/__Primary/Small/_Dark/Hover – Active [Smart]",
+			"Button/__Primary/Small/__Light/Hover – Active [Smart]",
 			"Button/__Primary/Small/_Dark/Disabled [Smart]",
 			"Button/__Primary/Small/__Light/Disabled [Smart]",
-			"Button/_Tertiary/Small/_Dark/_Default [Smart]",
-			"Button/_Tertiary/Small/__Light/_Default [Smart]",
-			"Button/_Secondary/Small/_Dark/_Default [Smart]",
-			"Button/_Secondary/Small/__Light/_Default [Smart]",
 			"Button/__Primary/Small/_Dark/_Default [Smart]",
 			"Button/__Primary/Small/__Light/_Default [Smart]",
-			"Button/_Tertiary/Large/_Dark/Hover - Active [Smart]",
-			"Button/_Tertiary/Large/__Light/Hover - Active [Smart]",
-			"Button/_Secondary/Large/_Dark/Hover - Active [Smart]",
-			"Button/_Secondary/Large/__Light/Hover - Active [Smart]",
-			"Button/__Primary/Large/_Dark/Hover - Active [Smart]",
-			"Button/__Primary/Large/__Light/Hover - Active [Smart]",
-			"Button/_Tertiary/Large/_Dark/Disabled [Smart]",
-			"Button/_Tertiary/Large/__Light/Disabled [Smart]",
-			"Button/_Secondary/Large/_Dark/Disabled [Smart]",
-			"Button/_Secondary/Large/__Light/Disabled [Smart]",
+			"Button/__Primary/Large/_Dark/Hover – Active [Smart]",
+			"Button/__Primary/Large/__Light/Hover – Active [Smart]",
 			"Button/__Primary/Large/_Dark/Disabled [Smart]",
 			"Button/__Primary/Large/__Light/Disabled [Smart]",
-			"Button/_Tertiary/Large/_Dark/_Default [Smart]",
-			"Button/_Tertiary/Large/__Light/_Default [Smart]",
-			"Button/_Secondary/Large/_Dark/_Default [Smart]",
-			"Button/_Secondary/Large/__Light/_Default [Smart]",
 			"Button/__Primary/Large/_Dark/_Default [Smart]",
 			"Button/__Primary/Large/__Light/_Default [Smart]",
-			"Button/_Tertiary/Large/_Dark/Hover - Active",
-			"Button/_Tertiary/Large/_Dark/Disabled",
-			"Button/_Tertiary/Large/_Dark/_Default",
-			"Button/_Tertiary/Small/_Dark/Loading",
-			"Button/_Tertiary/Small/_Dark/Hover - Active",
-			"Button/_Tertiary/Small/_Dark/Disabled",
-			"Button/_Tertiary/Small/_Dark/_Default",
-			"Button/_Tertiary/Tiny/_Dark/Loading",
-			"Button/_Tertiary/Tiny/_Dark/Hover - Active",
-			"Button/_Tertiary/Tiny/_Dark/Disabled",
-			"Button/_Tertiary/Tiny/_Dark/_Default",
-			"Button/_Secondary/Large/_Dark/Loading",
-			"Button/_Secondary/Large/_Dark/Hover - Active",
-			"Button/_Secondary/Large/_Dark/Disabled",
-			"Button/_Secondary/Large/_Dark/_Default",
-			"Button/_Secondary/Small/_Dark/Loading",
-			"Button/_Secondary/Small/_Dark/Hover - Active",
-			"Button/_Secondary/Small/_Dark/Disabled",
-			"Button/_Secondary/Small/_Dark/_Default",
-			"Button/_Secondary/Tiny/_Dark/Loading",
-			"Button/_Secondary/Tiny/_Dark/Hover - Active",
-			"Button/_Secondary/Tiny/_Dark/Disabled",
-			"Button/_Secondary/Tiny/_Dark/_Default",
 			"Button/__Primary/Tiny/_Dark/Loading",
-			"Button/__Primary/Tiny/_Dark/Hover - Active",
+			"Button/__Primary/Tiny/_Dark/Hover – Active",
 			"Button/__Primary/Tiny/_Dark/Disabled",
 			"Button/__Primary/Tiny/_Dark/_Default",
 			"Button/__Primary/Small/_Dark/Loading",
-			"Button/__Primary/Small/_Dark/Hover - Active",
+			"Button/__Primary/Small/_Dark/Hover – Active",
 			"Button/__Primary/Small/_Dark/Disabled",
 			"Button/__Primary/Small/_Dark/_Default",
 			"Button/__Primary/Large/_Dark/Loading",
-			"Button/__Primary/Large/_Dark/Hover - Active",
+			"Button/__Primary/Large/_Dark/Hover – Active",
 			"Button/__Primary/Large/_Dark/Disabled",
 			"Button/__Primary/Large/_Dark/_Default",
-			"Button/_Tertiary/Large/__Light/Loading",
-			"Button/_Tertiary/Large/__Light/Hover - Active",
-			"Button/_Tertiary/Large/__Light/Disabled",
-			"Button/_Tertiary/Large/__Light/_Default",
-			"Button/_Tertiary/Small/__Light/Loading",
-			"Button/_Tertiary/Small/__Light/Hover - Active",
-			"Button/_Tertiary/Small/__Light/Disabled",
-			"Button/_Tertiary/Small/__Light/_Default",
-			"Button/_Tertiary/Tiny/__Light/Loading",
-			"Button/_Tertiary/Tiny/__Light/Hover - Active",
-			"Button/_Tertiary/Tiny/__Light/Disabled",
-			"Button/_Tertiary/Tiny/__Light/_Default",
-			"Button/_Secondary/Large/__Light/Loading",
-			"Button/_Secondary/Large/__Light/Hover - Active",
-			"Button/_Secondary/Large/__Light/Disabled",
-			"Button/_Secondary/Large/__Light/_Default",
-			"Button/_Secondary/Small/__Light/Loading",
-			"Button/_Secondary/Small/__Light/Hover - Active",
-			"Button/_Secondary/Small/__Light/Disabled",
-			"Button/_Secondary/Small/__Light/_Default",
-			"Button/_Secondary/Tiny/__Light/Loading",
-			"Button/_Secondary/Tiny/__Light/Hover - Active",
-			"Button/_Secondary/Tiny/__Light/Disabled",
-			"Button/_Secondary/Tiny/__Light/_Default",
 			"Button/__Primary/Tiny/__Light/Loading",
-			"Button/__Primary/Tiny/__Light/Hover - Active",
+			"Button/__Primary/Tiny/__Light/Hover – Active",
 			"Button/__Primary/Tiny/__Light/Disabled",
 			"Button/__Primary/Tiny/__Light/_Default",
 			"Button/__Primary/Small/__Light/Loading",
-			"Button/__Primary/Small/__Light/Hover - Active",
+			"Button/__Primary/Small/__Light/Hover – Active",
 			"Button/__Primary/Small/__Light/Disabled",
 			"Button/__Primary/Small/__Light/_Default",
 			"Button/__Primary/Large/__Light/Loading",
-			"Button/__Primary/Large/__Light/Hover - Active",
+			"Button/__Primary/Large/__Light/Hover – Active",
 			"Button/__Primary/Large/__Light/Disabled",
 			"Button/__Primary/Large/__Light/_Default",
+		]
+	},
+	{
+		componentName: "🌈 Button: Secondary",
+		names: [
+			"Button/_Secondary/Large/_Dark/Hover – Active [Smart]",
+			"Button/_Secondary/Large/__Light/Hover – Active [Smart]",
+			"Button/_Secondary/Large/_Dark/Disabled [Smart]",
+			"Button/_Secondary/Large/__Light/Disabled [Smart]",
+			"Button/_Secondary/Large/_Dark/_Default [Smart]",
+			"Button/_Secondary/Large/__Light/_Default [Smart]",
+			"Button/_Secondary/Large/_Dark/Loading",
+			"Button/_Secondary/Large/_Dark/Hover – Active",
+			"Button/_Secondary/Large/_Dark/Disabled",
+			"Button/_Secondary/Large/_Dark/_Default",
+			"Button/_Secondary/Large/__Light/Loading",
+			"Button/_Secondary/Large/__Light/Hover – Active",
+			"Button/_Secondary/Large/__Light/Disabled",
+			"Button/_Secondary/Large/__Light/_Default",
+			"Button/_Secondary/Small/_Dark/Hover – Active [Smart]",
+			"Button/_Secondary/Small/__Light/Hover – Active [Smart]",
+			"Button/_Secondary/Small/_Dark/Disabled [Smart]",
+			"Button/_Secondary/Small/__Light/Disabled [Smart]",
+			"Button/_Secondary/Small/_Dark/_Default [Smart]",
+			"Button/_Secondary/Small/__Light/_Default [Smart]",
+			"Button/_Secondary/Small/_Dark/Loading",
+			"Button/_Secondary/Small/_Dark/Hover – Active",
+			"Button/_Secondary/Small/_Dark/Disabled",
+			"Button/_Secondary/Small/_Dark/_Default",
+			"Button/_Secondary/Small/__Light/Loading",
+			"Button/_Secondary/Small/__Light/Hover – Active",
+			"Button/_Secondary/Small/__Light/Disabled",
+			"Button/_Secondary/Small/__Light/_Default",
+			"Button/_Secondary/Tiny/_Dark/Hover – Active [Smart]",
+			"Button/_Secondary/Tiny/__Light/Hover – Active [Smart]",
+			"Button/_Secondary/Tiny/_Dark/Disabled [Smart]",
+			"Button/_Secondary/Tiny/__Light/Disabled [Smart]",
+			"Button/_Secondary/Tiny/_Dark/_Default [Smart]",
+			"Button/_Secondary/Tiny/__Light/_Default [Smart]",
+			"Button/_Secondary/Tiny/_Dark/Loading",
+			"Button/_Secondary/Tiny/_Dark/Hover – Active",
+			"Button/_Secondary/Tiny/_Dark/Disabled",
+			"Button/_Secondary/Tiny/_Dark/_Default",
+			"Button/_Secondary/Tiny/__Light/Loading",
+			"Button/_Secondary/Tiny/__Light/Hover – Active",
+			"Button/_Secondary/Tiny/__Light/Disabled",
+			"Button/_Secondary/Tiny/__Light/_Default",
+		]
+	},
+	{
+		componentName: "🌈 Button: Tertiary",
+		names: [
+			"Button/_Tertiary/Large/_Dark/Loading",
+			"Button/_Tertiary/Large/_Dark/Hover – Active [Smart]",
+			"Button/_Tertiary/Large/__Light/Hover – Active [Smart]",
+			"Button/_Tertiary/Large/_Dark/Disabled [Smart]",
+			"Button/_Tertiary/Large/__Light/Disabled [Smart]",
+			"Button/_Tertiary/Large/_Dark/_Default [Smart]",
+			"Button/_Tertiary/Large/__Light/_Default [Smart]",
+			"Button/_Tertiary/Large/_Dark/Hover – Active",
+			"Button/_Tertiary/Large/_Dark/Disabled",
+			"Button/_Tertiary/Large/_Dark/_Default",
+			"Button/_Tertiary/Large/__Light/Loading",
+			"Button/_Tertiary/Large/__Light/Hover – Active",
+			"Button/_Tertiary/Large/__Light/Disabled",
+			"Button/_Tertiary/Large/__Light/_Default",
+			"Button/_Tertiary/Large/_Dark/Loading",
+			"Button/_Tertiary/Large/_Dark/Hover – Active [Smart]",
+			"Button/_Tertiary/Large/__Light/Hover – Active [Smart]",
+			"Button/_Tertiary/Large/_Dark/Disabled [Smart]",
+			"Button/_Tertiary/Large/__Light/Disabled [Smart]",
+			"Button/_Tertiary/Large/_Dark/_Default [Smart]",
+			"Button/_Tertiary/Large/__Light/_Default [Smart]",
+			"Button/_Tertiary/Large/_Dark/Hover – Active",
+			"Button/_Tertiary/Large/_Dark/Disabled",
+			"Button/_Tertiary/Large/_Dark/_Default",
+			"Button/_Tertiary/Large/__Light/Loading",
+			"Button/_Tertiary/Large/__Light/Hover – Active",
+			"Button/_Tertiary/Large/__Light/Disabled",
+			"Button/_Tertiary/Large/__Light/_Default",
+			"Button/_Tertiary/Small/_Dark/Hover – Active [Smart]",
+			"Button/_Tertiary/Small/__Light/Hover – Active [Smart]",
+			"Button/_Tertiary/Small/_Dark/Disabled [Smart]",
+			"Button/_Tertiary/Small/__Light/Disabled [Smart]",
+			"Button/_Tertiary/Small/_Dark/_Default [Smart]",
+			"Button/_Tertiary/Small/__Light/_Default [Smart]",
+			"Button/_Tertiary/Small/_Dark/Loading",
+			"Button/_Tertiary/Small/_Dark/Hover – Active",
+			"Button/_Tertiary/Small/_Dark/Disabled",
+			"Button/_Tertiary/Small/_Dark/_Default",
+			"Button/_Tertiary/Small/__Light/Loading",
+			"Button/_Tertiary/Small/__Light/Hover – Active",
+			"Button/_Tertiary/Small/__Light/Disabled",
+			"Button/_Tertiary/Small/__Light/_Default",
+			"Button/_Tertiary/Small/_Dark/Hover – Active [Smart]",
+			"Button/_Tertiary/Small/__Light/Hover – Active [Smart]",
+			"Button/_Tertiary/Small/_Dark/Disabled [Smart]",
+			"Button/_Tertiary/Small/__Light/Disabled [Smart]",
+			"Button/_Tertiary/Small/_Dark/_Default [Smart]",
+			"Button/_Tertiary/Small/__Light/_Default [Smart]",
+			"Button/_Tertiary/Small/_Dark/Loading",
+			"Button/_Tertiary/Small/_Dark/Hover – Active",
+			"Button/_Tertiary/Small/_Dark/Disabled",
+			"Button/_Tertiary/Small/_Dark/_Default",
+			"Button/_Tertiary/Small/__Light/Loading",
+			"Button/_Tertiary/Small/__Light/Hover – Active",
+			"Button/_Tertiary/Small/__Light/Disabled",
+			"Button/_Tertiary/Small/__Light/_Default",
+			"Button/_Tertiary/Tiny/_Dark/Hover – Active [Smart]",
+			"Button/_Tertiary/Tiny/__Light/Hover – Active [Smart]",
+			"Button/_Tertiary/Tiny/_Dark/Disabled [Smart]",
+			"Button/_Tertiary/Tiny/__Light/Disabled [Smart]",
+			"Button/_Tertiary/Tiny/_Dark/_Default [Smart]",
+			"Button/_Tertiary/Tiny/__Light/_Default [Smart]",
+			"Button/_Tertiary/Tiny/_Dark/Loading",
+			"Button/_Tertiary/Tiny/_Dark/Hover – Active",
+			"Button/_Tertiary/Tiny/_Dark/Disabled",
+			"Button/_Tertiary/Tiny/_Dark/_Default",
+			"Button/_Tertiary/Tiny/__Light/Loading",
+			"Button/_Tertiary/Tiny/__Light/Hover – Active",
+			"Button/_Tertiary/Tiny/__Light/Disabled",
+			"Button/_Tertiary/Tiny/__Light/_Default",
+		]
+	},
+	{
+		componentName: "🌈 Button: Sticky",
+		names: [
 			"Button/_Sticky/01 Default",
-			"Button/_Sticky/02 Hover + Active",
+			"Button/_Sticky/02 Hover – Active",
 			"Button/_Sticky/04 Disabled",
 			"Button/_Sticky/03 Loading",
 		]
 	},
 	{
-		componentName: "Card",
-		names: ["Card/__Light/_Base", "Card/_Dark/_Base"]
+		componentName: "🌈 Card",
+		names: [
+			"Card/__Light/_Base",
+			"Card/_Dark/_Base",
+			"Card/__Light/_Base [Dismissable]",
+			"Card/_Dark/_Base [Dismissable]",
+		]
 	},
 	{
-		componentName: "CardDetails",
+		componentName: "🌈 CardDetails",
 		names: [
 			"Card/__Light/Detail/M-XL/_Default",
 			"Card/__Light/Detail/M-XL/With icon",
@@ -210,7 +258,64 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Checkbox",
+		componentName: "⚠️ CardValueInformation",
+		names: [
+			"Card/__Light/Value Information/XS-S",
+			"Card/__Light/Value Information/M-XL",
+			"Card/_Dark/Value Information/XS-S",
+			"Card/_Dark/Value Information/M-XL",
+		]
+	},
+	{
+		componentName: "⚠️ CardInformation",
+		names: [
+			"Card/__Light/Information/XS-S",
+			"Card/_Dark/Information/XS-S",
+			"Card/_Dark/Information/M-XL",
+			"Card/__Light/Information/M-XL",
+		]
+	},
+	{
+		componentName: "⚠️ CardAccount",
+		names: [
+			"Card/_Account/M-XL",
+			"Card/_Account/XS-S",
+		]
+	},
+	{
+		componentName: "⚠️ CardCrossSell",
+		names: [
+			"Card/_Dark/Cross-sell/M-XL",
+			"Card/_Dark/Cross-sell/XS-S",
+			"Card/__Light/Cross-sell/XS-S",
+			"Card/__Light/Cross-sell/M-XL",
+		]
+	},
+	{
+		componentName: "⚠️ Cell",
+		names: [
+			"Cell/__Light/01 Text only/01 Title",
+			"Cell/__Light/01 Text only/02 Title + Description",
+			"Cell/__Light/01 Text only/03 Description + Title",
+			"Cell/__Light/02 With Icon/01 Title",
+			"Cell/__Light/02 With Icon/02 Title + Description",
+			"Cell/__Light/02 With Icon/03 Description + Title",
+			"Cell/_Dark/01 Text only/01 Title",
+			"Cell/_Dark/01 Text only/02 Title + Description",
+			"Cell/_Dark/01 Text only/03 Description + Title",
+			"Cell/_Dark/02 With Icon/01 Title",
+			"Cell/_Dark/02 With Icon/02 Title + Description",
+			"Cell/_Dark/02 With Icon/03 Description + Title",
+		]
+	},
+	{
+		componentName: "⚠️ CellValue",
+		names: [
+			"Cell/Text only/Value",
+		]
+	},
+	{
+		componentName: "🌈 Checkbox",
 		names: [
 			"Form/Checkbox/_Default/_Dark/_Default",
 			"Form/Checkbox/_Default/_Dark/With Description",
@@ -222,10 +327,26 @@ const symbols = [
 			"Form/Checkbox/_Default/__Light/With Description [Disabled]",
 			"Form/Checkbox/_Default/_Dark/Compact [Disabled]",
 			"Form/Checkbox/_Default/__Light/Compact [Disabled]",
+			"Form/Checkbox Group/02 Desktop/_Dark/Simple",
+			"Form/Checkbox Group/01 Mobile/_Dark/Simple",
+			"Form/_overrides/Checkbox/Mobile/__Light/_Default",
+			"Form/_overrides/Checkbox/Mobile/_Dark/_Default",
+			"Form/_overrides/Checkbox/Mobile/__Light/Checked",
+			"Form/_overrides/Checkbox/Mobile/_Dark/Checked",
+			"Form/Checkbox Group/02 Desktop/_Dark/_Default",
+			"Form/Checkbox Group/01 Mobile/_Dark/_Default",
+			"Form/Checkbox Group/02 Desktop/__Light/Simple",
+			"Form/Checkbox Group/01 Mobile/__Light/Simple",
+			"Form/Checkbox Group/02 Desktop/__Light/_Default",
+			"Form/Checkbox Group/01 Mobile/__Light/_Default",
+			"Form/_overrides/Checkbox/Desktop/_Dark/_Default",
+			"Form/_overrides/Checkbox/Desktop/__Light/_Default",
+			"Form/_overrides/Checkbox/Desktop/_Dark/Checked",
+			"Form/_overrides/Checkbox/Desktop/__Light/Checked",
 		]
 	},
 	{
-		componentName: "ContextualHelp",
+		componentName: "🌈 ContextualHelp",
 		names: [
 			"_global/info-contextual/Dark",
 			"_global/info-contextual/Light",
@@ -233,7 +354,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Criteria",
+		componentName: "🌈 Criteria",
 		names: [
 			"Form/_overrides/Criteria/Warning/_On Light",
 			"Form/_overrides/Criteria/Error/_On Light",
@@ -244,18 +365,85 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "DonutSecondary",
+		componentName: "⚠️ [DonutPrimary]: DonutPrimary.SlideScore",
+		names: [
+			"Donuts/Primary/01 XS-S/Score/01 Alpha",
+			"Donuts/Primary/02 M-XL/Score/01 Alpha",
+			"Donuts/Primary/01 XS-S/Score/00 Theta",
+			"Donuts/Primary/02 M-XL/Score/00 Theta",
+			"Donuts/Primary/01 XS-S/Score/02 Beta",
+			"Donuts/Primary/02 M-XL/Score/02 Beta",
+			"Donuts/Primary/01 XS-S/Score/03 Gamma",
+			"Donuts/Primary/02 M-XL/Score/03 Gamma",
+			"Donuts/Primary/01 XS-S/Score/04 Delta",
+			"Donuts/Primary/02 M-XL/Score/04 Delta",
+			"Donuts/Primary/01 XS-S/Score/05 Epsilon",
+			"Donuts/Primary/02 M-XL/Score/05 Epsilon",
+		]
+	},
+	{
+		componentName: "⚠️ [DonutPrimary]: DonutPrimary.Countdown",
+		names: [
+			"Donuts/Primary/01 XS-S/Countdown",
+			"Donuts/Primary/02 M-XL/Countdown",
+		]
+	},
+	{
+		componentName: "⚠️ [DonutPrimary]: DonutPrimary.Offers",
+		names: [
+			"Donuts/Primary/01 XS-S/Offers/Cards",
+			"Donuts/Primary/02 M-XL/Offers/Cards",
+			"Donuts/Primary/01 XS-S/Offers/Loans",
+			"Donuts/Primary/02 M-XL/Offers/Loans",
+			"Donuts/Primary/01 XS-S/Offers/Car Finance",
+			"Donuts/Primary/02 M-XL/Offers/Car Finance",
+		]
+	},
+	{
+		componentName: "⚠️ [DonutPrimary]: DonutPrimary.Change",
+		names: [
+			"Donuts/Primary/01 XS-S/Change/Up",
+			"Donuts/Primary/02 M-XL/Change/Up",
+			"Donuts/Primary/01 XS-S/Change/Down",
+			"Donuts/Primary/01 XS-S/Change/Stable",
+			"Donuts/Primary/02 M-XL/Change/Down",
+			"Donuts/Primary/02 M-XL/Change/Stable",
+		]
+	},
+	{
+		componentName: "⚠️ [DonutPrimary]: DonutPrimary.Debt",
+		names: [
+			"Donuts/Primary/01 XS-S/Short Term Debt/Down",
+			"Donuts/Primary/02 M-XL/Short Term Debt/Down",
+			"Donuts/Primary/01 XS-S/Long Term Debt/Down",
+			"Donuts/Primary/02 M-XL/Long Term Debt/Down",
+			"Donuts/Primary/01 XS-S/Short Term Debt/Up",
+			"Donuts/Primary/01 XS-S/Short Term Debt/No change",
+			"Donuts/Primary/02 M-XL/Short Term Debt/Up",
+			"Donuts/Primary/02 M-XL/Short Term Debt/No change",
+			"Donuts/Primary/01 XS-S/Long Term Debt/Up",
+			"Donuts/Primary/01 XS-S/Long Term Debt/No change",
+			"Donuts/Primary/02 M-XL/Long Term Debt/Up",
+			"Donuts/Primary/02 M-XL/Long Term Debt/No change",
+		]
+	},
+	{
+		componentName: "🌈 [DonutSecondary]: DonutSecondary.SlideText",
 		names: [
 			"Donuts/Secondary/01 XS-S/Default",
 			"Donuts/Secondary/02 M-XL/Default",
+		]
+	},
+	{
+		componentName: "🌈 [DonutSecondary]: DonutSecondary.SlideOffers",
+		names: [
 			"Donuts/Secondary/01 XS-S/Number",
 			"Donuts/Secondary/02 M-XL/Number",
 		]
 	},
 	{
-		componentName: "DonutSimple",
+		componentName: "🌈 DonutSimple",
 		names: [
-			"Donuts/Simple/Small/01 Alpha",
 			"Donuts/Simple/Large/05 Epsilon",
 			"Donuts/Simple/Large/04 Delta",
 			"Donuts/Simple/Large/03 Gamma",
@@ -279,21 +467,38 @@ const symbols = [
 			"Donuts/Simple/Small/03 Gamma",
 			"Donuts/Simple/Small/04 Delta",
 			"Donuts/Simple/Small/05 Epsilon",
+			"Donuts/Simple/Medium/01 Alpha",
+			"Donuts/Simple/Medium/00 Theta",
+			"Donuts/Simple/Medium/02 Beta",
+			"Donuts/Simple/Medium/03 Gamma",
+			"Donuts/Simple/Medium/04 Delta",
+			"Donuts/Simple/Medium/05 Epsilon",
+			"Donuts/Simple/Small/02 Alpha",
 		]
 	},
 	{
-		componentName: "DonutTertiary",
+		componentName: "🌈 [DonutTertiary]: DonutTertiary.Start",
 		names: [
 			"Donuts/Tertiary/01 XS-S/Start",
 			"Donuts/Tertiary/02 M-XL/Start",
+		]
+	},
+	{
+		componentName: "🌈 [DonutTertiary]: DonutTertiary.Continue",
+		names: [
 			"Donuts/Tertiary/01 XS-S/Continue",
 			"Donuts/Tertiary/02 M-XL/Continue",
+		]
+	},
+	{
+		componentName: "🌈 [DonutTertiary]: DonutTertiary.Tasks",
+		names: [
 			"Donuts/Tertiary/01 XS-S/Tasks",
 			"Donuts/Tertiary/02 M-XL/Tasks",
 		]
 	},
 	{
-		componentName: "Drawer",
+		componentName: "🌈 Drawer",
 		names: [
 			"_global/Drawer/_Right/01 XS-S",
 			"_global/Drawer/_Right/02 M",
@@ -303,7 +508,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Dropdown",
+		componentName: "🌈 Dropdown",
 		names: [
 			"Form/_field/Dropdown/_Dark/Disabled",
 			"Form/_field/Dropdown/__Light/Disabled",
@@ -322,7 +527,17 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Header",
+		componentName: "⚠️ Footer",
+		names: [
+			"Footer/01 XL",
+			"Footer/02 L",
+			"Footer/03 M",
+			"Footer/04 S",
+			"Footer/05 XS",
+		]
+	},
+	{
+		componentName: "🌈 Header",
 		names: [
 			"Text/Full-width title/__Light/Without Description/04 XS-S/02 Switch",
 			"Text/Full-width title/__Light/Without Description/03 M",
@@ -341,14 +556,31 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Information",
+		componentName: "🌈 Information",
 		names: [
 			"Text/Information/_Dark",
 			"Text/Information/__Light",
 		]
 	},
 	{
-		componentName: "Label",
+		componentName: "⚠️ Input",
+		names: [
+			"Form/Label + Field/_Dark/Simple Criteria",
+			"Form/Label + Field/_Dark/Criteria",
+			"Form/Label + Field/_Dark/Simple Disabled",
+			"Form/Label + Field/_Dark/Disabled",
+			"Form/Label + Field/_Dark/Simple",
+			"Form/Label + Field/_Dark/_Default",
+			"Form/Label + Field/__Light/Simple Criteria",
+			"Form/Label + Field/__Light/Criteria",
+			"Form/Label + Field/__Light/Simple Disabled",
+			"Form/Label + Field/__Light/Disabled",
+			"Form/Label + Field/__Light/Simple",
+			"Form/Label + Field/__Light/_Default",
+		]
+	},
+	{
+		componentName: "🌈 Label",
 		names: [
 			"Form/Label/__Light/Default Disabled",
 			"Form/Label/_Dark/Default Disabled",
@@ -361,7 +593,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "[List] List item",
+		componentName: "🌈 [List] List item",
 		names: [
 			"Text/Bullet/_Dark/04 With Link",
 			"Text/Bullet/_Dark/03 Negative",
@@ -374,14 +606,14 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "MegaLoader",
+		componentName: "🌈 MegaLoader",
 		names: [
 			"_global/Mega Spinner/Text only",
 			"_global/Mega Spinner/With image",
 		]
 	},
 	{
-		componentName: "MenuSecondary",
+		componentName: "🌈 MenuSecondary",
 		names: [
 			"Navigation/_SecondaryNav/_XS-S/No scroll",
 			"Navigation/_SecondaryNav/_XS-S/Right aligned",
@@ -393,7 +625,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "MultiSelect",
+		componentName: "🌈 MultiSelect",
 		names: [
 			"Form/Multi Select/_Default",
 			"Form/Multi Select/Hover",
@@ -401,7 +633,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Notification",
+		componentName: "🌈 Notification",
 		names: [
 			"Notifications/_Dark/XS-S",
 			"Notifications/_Dark/M-XL",
@@ -410,7 +642,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Pager",
+		componentName: "🌈 Pager",
 		names: [
 			"_global/Pager/On Dark/08/08",
 			"_global/Pager/On Dark/08/07",
@@ -478,10 +710,14 @@ const symbols = [
 			"_global/Pager/On Light/03/03",
 			"_global/Pager/On Light/03/02",
 			"_global/Pager/On Light/03/01",
+			"_global/Pager/_overrides/02 Dark/02 Active",
+			"_global/Pager/_overrides/02 Dark/01 Default",
+			"_global/Pager/_overrides/01 Light/02 Active",
+			"_global/Pager/_overrides/01 Light/01 Default",
 		]
 	},
 	{
-		componentName: "Password",
+		componentName: "🌈 Password",
 		names: [
 			"Form/Label + Field/__Light/Simple Password",
 			"Form/Label + Field/__Light/Password",
@@ -506,7 +742,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Pill",
+		componentName: "🌈 Pill",
 		names: [
 			"Text/Number/_overrides/__Light/01 Body",
 			"Text/Number/_overrides/__Light/02 Success",
@@ -516,10 +752,14 @@ const symbols = [
 			"Text/Number/_overrides/_Dark/02 Success",
 			"Text/Number/_overrides/_Dark/03 Failure",
 			"Text/Number/_overrides/_Dark/04 Disabled",
+			"Text/Number/_Dark/01 Default",
+			"Text/Number/_Dark/02 Disabled",
+			"Text/Number/__Light/01 Default",
+			"Text/Number/__Light/02 Disabled",
 		]
 	},
 	{
-		componentName: "Popover",
+		componentName: "🌈 Popover",
 		names: [
 			"_global/Popup position/On Light/04 Left",
 			"_global/Popup position/On Light/03 Right",
@@ -531,10 +771,14 @@ const symbols = [
 			"_global/Popup position/On Dark/01 Top",
 			"Text/Popup/__Light/01 Default",
 			"Text/Popup/_Dark/01 Default",
+			"Text/Popup/_Dark/02 Choice/02 XS-S",
+			"Text/Popup/_Dark/02 Choice/01 M-XL",
+			"Text/Popup/__Light/02 Choice/02 XS-S",
+			"Text/Popup/__Light/02 Choice/01 M-XL",
 		]
 	},
 	{
-		componentName: "Progress",
+		componentName: "🌈 Progress",
 		names: [
 			"_global/Progress/__Light/Linked/Link",
 			"_global/Progress/__Light/Linked/Unavailable",
@@ -548,10 +792,22 @@ const symbols = [
 			"_global/Progress/_Dark/Linked/_Default",
 			"_global/Progress/_Dark/Solo/_Default",
 			"_global/Progress/_Dark/Solo/Unavailable",
+			"_global/Progress/Ω _overrides/_Dark/02 Other/03 Unavailable",
+			"_global/Progress/Ω _overrides/_Dark/02 Other/02 Done",
+			"_global/Progress/Ω _overrides/_Dark/02 Other/01 Todo",
+			"_global/Progress/Ω _overrides/_Dark/01 Top/02 Done",
+			"_global/Progress/Ω _overrides/_Dark/01 Top/01 Todo",
+			"_global/Progress/Ω _overrides/_Dark/01 Top/03 Unavailable",
+			"_global/Progress/Ω _overrides/__Light/02 Other/03 Unavailable",
+			"_global/Progress/Ω _overrides/__Light/02 Other/02 Done",
+			"_global/Progress/Ω _overrides/__Light/02 Other/01 Todo",
+			"_global/Progress/Ω _overrides/__Light/01 Top/02 Done",
+			"_global/Progress/Ω _overrides/__Light/01 Top/01 Todo",
+			"_global/Progress/Ω _overrides/__Light/01 Top/03 Unavailable",
 		]
 	},
 	{
-		componentName: "ProgressRing",
+		componentName: "🌈 ProgressRing",
 		names: [
 			"Donuts/_overrides/Ring/Epsilon/100%",
 			"Donuts/_overrides/Ring/Tertiary/100%",
@@ -597,7 +853,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Prompt",
+		componentName: "🌈 Prompt",
 		names: [
 			"Prompt/_Dark/04 XL",
 			"Prompt/_Dark/03 L",
@@ -610,7 +866,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Radio",
+		componentName: "🌈 Radio",
 		names: [
 			"Form/Radio/02 Desktop/_Dark/_Default",
 			"Form/Radio/01 Mobile/_Dark/_Default",
@@ -639,7 +895,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "RadioGroup",
+		componentName: "🌈 RadioGroup",
 		names: [
 			"Form/Radio Group/02 Desktop/_Dark/Simple",
 			"Form/Radio Group/01 Mobile/_Dark/Simple",
@@ -652,7 +908,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Ratings",
+		componentName: "🌈 Ratings",
 		names: [
 			"_global/Rating/5",
 			"_global/Rating/4.5",
@@ -669,14 +925,14 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "SectionTitle",
+		componentName: "🌈 SectionTitle",
 		names: [
 			"Text/SectionTitle/M-XL",
 			"Text/SectionTitle/XS-S",
 		]
 	},
 	{
-		componentName: "SegmentedControl",
+		componentName: "🌈 SegmentedControl",
 		names: [
 			"Form/Segmented control/Group/Large/2 options",
 			"Form/Segmented control/Group/Small/2 options",
@@ -685,7 +941,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "SegmentedControlOption",
+		componentName: "🌈 SegmentedControlOption",
 		names: [
 			"Form/Segmented control/Option/Small/Disabled",
 			"Form/Segmented control/Option/Small/Active",
@@ -698,7 +954,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "Tag",
+		componentName: "🌈 Tag",
 		names: [
 			"_global/Tag/__Light/_Default [Smart]",
 			"_global/Tag/__Light/_Default [Fixed]",
@@ -733,7 +989,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "TextInput",
+		componentName: "🌈 TextInput",
 		names: [
 			"Form/_field/Input + Prefix + Suffix/_Dark/Disabled",
 			"Form/_field/Input + Prefix + Suffix/__Light/Disabled",
@@ -794,7 +1050,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "TextAreaInput",
+		componentName: "🌈 TextAreaInput",
 		names: [
 			"Form/_field/Text Area/_Dark/Disabled",
 			"Form/_field/Text Area/__Light/Disabled",
@@ -813,7 +1069,23 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "ToggleSwitch",
+		componentName: "⚠️ TimeMachine",
+		names: [
+			"Widgets/Time Machine/_overrides/Provider/Experian",
+			"Widgets/Time Machine/_XS-S/Basic",
+			"Widgets/Time Machine/M-XL/Basic",
+			"Widgets/Time Machine/_XS-S/_Default",
+			"Widgets/Time Machine/_overrides/Provider/Equifax",
+			"Widgets/Time Machine/_overrides/Change/Up",
+			"Widgets/Time Machine/_overrides/Provider/TransUnion",
+			"Widgets/Time Machine/M-XL/_Default",
+			"Widgets/Time Machine/_overrides/Scrubber/XS-S",
+			"Widgets/Time Machine/_overrides/Change/Down",
+			"Widgets/Time Machine/_overrides/Scrubber/M-XL",
+		]
+	},
+	{
+		componentName: "🌈 ToggleSwitch",
 		names: [
 			"Form/Checkbox/Switch/_Dark/Compact",
 			"Form/Checkbox/Switch/__Light/Compact",
@@ -830,7 +1102,7 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "PrimaryNav",
+		componentName: "🌈 PrimaryNav",
 		names: [
 			"Navigation/__PrimaryNav/_XS-S [Header]",
 			"Navigation/__PrimaryNav/M",
@@ -840,8 +1112,9 @@ const symbols = [
 		]
 	},
 	{
-		componentName: "MenuItem",
+		componentName: "🌈 MenuItem",
 		names: [
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/Dashboard/_Default",
 			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Dashboard/_Default",
 			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Dashboard/Active",
 			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/Report/_Default",
@@ -875,14 +1148,25 @@ const symbols = [
 			"Navigation/🚫 overrides/MyAccountItem/L-XL",
 			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/XS-S/_Template",
 			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/M-XL/_Template",
+			"Navigation/🚫 overrides/_MyAccountMenu/MenuItem/My Account/Active",
+			"Navigation/🚫 overrides/__PrimaryNav/MenuItem/L-XL/My Account",
 		]
 	},
 	{
-		componentName: "MyAccountMenu",
+		componentName: "🌈 MyAccountMenu",
 		names: [
 			"Navigation/_MyAccountMenu/_XS-S",
 			"Navigation/_MyAccountMenu/M",
-			"Navigation/_MyAccountMenu/L - XL",
+			"Navigation/_MyAccountMenu/L-XL",
+		]
+	},
+	{
+		componentName: "🌈 TextValue",
+		names: [
+			"Text/Value information/_Dark",
+			"Text/Value information/__Light",
+			"Text/Value information/_overrides/__Light/Label",
+			"Text/Value information/_overrides/_Dark/Label",
 		]
 	}
 ];
