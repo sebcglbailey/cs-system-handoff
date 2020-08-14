@@ -587,7 +587,7 @@ const symbols = [
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "🌈 CSCellTitleSwitch",
+        componentName: "🌈 CSCellSwitch",
         names: [
             "Cells/_Dark/Action/Switch [Disabled]",
             "Cells/_Dark/Action/Switch",
@@ -596,7 +596,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCellRadioTitle",
+        componentName: "⚠️ CSCellRadio",
         names: [
             "Cells/_Dark/Action/Radio [Disabled]",
             "Cells/_Dark/Action/Radio",
@@ -773,7 +773,24 @@ const symbols = [
             "Cells/Ω _overrides/Switch/_Dark/Checked [Disabled]",
         ]
     },
-
+    {
+        componentName: "⚠️ CSForm",
+        names: [
+            "Forms/_Dark/Simple Criteria",
+            "Forms/_Dark/Criteria",
+            "Forms/_Dark/Simple Disabled",
+            "Forms/_Dark/Disabled",
+            "Forms/_Dark/Simple",
+            "Forms/_Dark/_Default",
+            "Forms/__Light/Simple Criteria",
+            "Forms/__Light/Criteria",
+            "Forms/__Light/Simple Disabled",
+            "Forms/__Light/Disabled",
+            "Forms/__Light/Simple",
+            "Forms/__Light/_Default",
+        ],
+        overrides: formOverrides
+    },
     {
         componentName: '🌈 CSInputField',
         names: [
