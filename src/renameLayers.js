@@ -5,7 +5,35 @@ import UI from "sketch/ui";
 import LIBRARIES from './helpers/libraries';
 import chooseLibrary from './helpers/chooseLibrary';
 
+const document = sketch.Document.getSelectedDocument();
+
 let libraryCheck = "WebApp";
+let typeCheck = true;
+
+const getOverrides = (layer, symbol) => {
+
+  symbol.overrides.forEach(override => {
+    const overrideName = override.overrideName
+    const overrideSymbol = layer.overrides.filter(symbolOverride => {
+      return symbolOverride?.affectedLayer?.name == overrideName
+    })
+    let overrideSymbolName = String(overrideSymbol[0]?.sketchObject.children()[0]?.master().name())
+
+    let filter = override.options.filter(overrideOption => {
+      return overrideOption.names.includes(overrideSymbolName)
+    })
+
+    if (filter.length >= 1) {
+      if (override.replaceName) {
+        layer.name = filter[0].componentName
+      } else {
+        layer.name += filter[0].componentNameAddition
+      }
+    }
+  })
+
+
+}
 
 const iterateLayers = (layers, index) => {
 
@@ -34,10 +62,14 @@ const iterateLayers = (layers, index) => {
         filter[0].componentName &&
         filter[0].componentName.length > 0
       ) {
-        // console.log(filter[0].componentName)
         layer.name = filter[0].componentName;
+
+        if (layer.overrides.length > 0 && filter[0].overrides) {
+          getOverrides(layer, filter[0])
+        }
+
       }
-    } else if (layer.type == "Text" && libraryCheck == "CSText") {
+    } else if (layer.type == "Text" && typeCheck) {
       if (!layer.sharedStyle) {
         return;
       }
@@ -63,14 +95,14 @@ const iterateLayers = (layers, index) => {
 
 export default function (context) {
 
-  let document = sketch.Document.getSelectedDocument();
   let pages = document.pages;
   let selectedLayers = document.selectedLayers;
   let selectedPage = document.selectedPage;
 
   chooseLibrary(
-    (library) => {
+    (library, includeType) => {
       libraryCheck = library
+      typeCheck = includeType
 
       let layers = selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage ? selectedPage.layers : pages
 
