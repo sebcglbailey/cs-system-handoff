@@ -576,7 +576,7 @@ const symbols = [
     // ------------------------------------
 
     {
-        componentName: "⚠️ CSCellTitle",
+        componentName: "⚠️ CSCellTitleDescription",
         names: [
             "Cells/__Light/Text only/Title",
             "Cells/__Light/Text only/Title + Description",
@@ -1052,7 +1052,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSWidgetMissedPayments",
+        componentName: "⚠️ CSWidgetReportChanges",
         names: [
             "Widgets/__Light/Report changes",
             "Widgets/_Dark/Report changes",
