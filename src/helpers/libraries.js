@@ -7,7 +7,7 @@ const LIBRARIES = {
     WebApp: CSWeb,
     CSiOS: CSiOS,
     CSAndroid: CSAndroid,
-    CSText: CSText
+    CSText: CSText,
 };
 
 export default LIBRARIES;
