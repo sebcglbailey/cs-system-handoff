@@ -1071,17 +1071,10 @@ const symbols = [
 	{
 		componentName: "⚠️ TimeMachine",
 		names: [
-			"Widgets/Time Machine/_overrides/Provider/Experian",
 			"Widgets/Time Machine/_XS-S/Basic",
 			"Widgets/Time Machine/M-XL/Basic",
 			"Widgets/Time Machine/_XS-S/_Default",
-			"Widgets/Time Machine/_overrides/Provider/Equifax",
-			"Widgets/Time Machine/_overrides/Change/Up",
-			"Widgets/Time Machine/_overrides/Provider/TransUnion",
 			"Widgets/Time Machine/M-XL/_Default",
-			"Widgets/Time Machine/_overrides/Scrubber/XS-S",
-			"Widgets/Time Machine/_overrides/Change/Down",
-			"Widgets/Time Machine/_overrides/Scrubber/M-XL",
 		]
 	},
 	{
