@@ -1,7 +1,7 @@
 {
   "name": "cs-system-handoff",
   "description": "",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "engines": {
     "sketch": ">=49.0"
   },
