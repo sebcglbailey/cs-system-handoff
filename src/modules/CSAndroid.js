@@ -572,6 +572,10 @@ const symbols = [
         ]
     },
 
+    // ------------------------------------
+    // CELLS
+    // ------------------------------------
+
     {
         componentName: "🌈 CSCellTitleDescription",
         names: [
@@ -638,7 +642,12 @@ const symbols = [
     },
     {
         componentName: "⚠️ CSCellValue",
-        names: ["Cells/__Light/Text only/ Value", "Cells/_Dark/Text only/ Value"],
+        names: [
+            "Cells/__Light/Text only/Value",
+            "Cells/_Dark/Text only/Value",
+            "Cells/__Light/With icon/Value",
+            "Cells/_Dark/With icon/Value"
+        ],
         overrides: cellRightAccOverrides
     },
     {
