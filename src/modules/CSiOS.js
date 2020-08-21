@@ -3,14 +3,16 @@ const cellRightAccOverrides = [
         overrideName: "Right Accessory",
         options: [
             {
-                componentNameAddition: ": Switch",
+                componentNameAddition: "Toggle",
+                addAccessoryToName: true,
                 names: [
                     "Cells/🚫 overrides/Right Accessory/__Light/Switch",
                     "Cells/🚫 overrides/Right Accessory/_Dark/Switch",
                 ]
             },
             {
-                componentNameAddition: ": Radio",
+                componentNameAddition: "Radio",
+                addAccessoryToName: true,
                 names: [
                     "Cells/🚫 overrides/Right Accessory/__Light/Radio",
                     "Cells/🚫 overrides/Right Accessory/_Dark/Radio",
@@ -26,7 +28,8 @@ const cellRightAccOverrides = [
                 ]
             },
             {
-                componentNameAddition: ": Detail",
+                componentNameAddition: "Detail",
+                addAccessoryToName: true,
                 names: [
                     "Cells/🚫 overrides/Right Accessory/__Light/Detail",
                     "Cells/🚫 overrides/Right Accessory/_Dark/Detail",
@@ -80,7 +83,7 @@ const formOverrides = [
         replaceName: true,
         options: [
             {
-                componentName: "⚠️ CSFormInput",
+                componentName: "🌈 CSFormField",
                 names: [
                     "Forms/_Dark/☞ Field/Input/Disabled",
                     "Forms/__Light/☞ Field/Input/Disabled",
@@ -379,7 +382,7 @@ const symbols = [
     // ------------------------------------
 
     {
-        componentName: "⚠️ CSPrimaryButton",
+        componentName: "🌈 CSPrimaryButton",
         names: [
             "Button/__Light/__Primary/_Default",
             "Button/__Light/__Primary/_Default [Smart]",
@@ -413,7 +416,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSSecondaryButton",
+        componentName: "🌈 CSSecondaryButton",
         names: [
             "Button/__Light/_Secondary/_Default",
             "Button/__Light/_Secondary/_Default [Smart]",
@@ -447,7 +450,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSTertiaryButton",
+        componentName: "🌈 CSTertiaryButton",
         names: [
             "Button/__Light/_Tertiary/_Default",
             "Button/__Light/_Tertiary/_Default [Smart]",
@@ -495,7 +498,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCardCrossSell",
+        componentName: "🌈 CSCrossSellView",
         names: [
             "Cards/_Dark/Cross-sell",
             "Cards/_Dark/Cross-sell [Small]",
@@ -539,7 +542,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCardCallout",
+        componentName: "🌈 CSCalloutView",
         names: [
             "Cards/__Light/Callout",
             "Cards/_Dark/Callout",
@@ -576,21 +579,27 @@ const symbols = [
     // ------------------------------------
 
     {
-        componentName: "⚠️ CSCellTitleDescription",
+        componentName: "🌈 CSTitle{accessory}Cell",
         names: [
             "Cells/__Light/Text only/Title",
-            "Cells/__Light/Text only/Title + Description",
             "Cells/__Light/With icon/Title",
-            "Cells/__Light/With icon/Title + Description",
             "Cells/_Dark/Text only/Title",
-            "Cells/_Dark/Text only/Title + Description",
             "Cells/_Dark/With icon/Title",
+        ],
+        overrides: cellRightAccOverrides
+    },
+    {
+        componentName: "🌈 CSTitleDescription{accessory}Cell",
+        names: [
+            "Cells/__Light/Text only/Title + Description",
+            "Cells/__Light/With icon/Title + Description",
+            "Cells/_Dark/Text only/Title + Description",
             "Cells/_Dark/With icon/Title + Description"
         ],
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "⚠️ CSCellDescriptionTitle",
+        componentName: "⚠️ CSDescriptionTitle{accessory}Cell",
         names: [
             "Cells/__Light/Text only/Description + Title",
             "Cells/__Light/With icon/Description + Title",
@@ -600,7 +609,7 @@ const symbols = [
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "⚠️ CSCellValue",
+        componentName: "🌈 CSValue{accessory}Cell",
         names: [
             "Cells/__Light/Text only/Value",
             "Cells/_Dark/Text only/Value",
@@ -610,7 +619,7 @@ const symbols = [
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "⚠️ CSCellSwitch",
+        componentName: "🌈 CSTitleToggleCell",
         names: [
             "Cells/__Light/Action/Switch",
             "Cells/__Light/Action/Switch [Disabled]",
@@ -619,7 +628,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCellRadio",
+        componentName: "🌈 CSTitleRadioCell",
         names: [
             "Cells/__Light/Action/Radio",
             "Cells/__Light/Action/Radio [Disabled]",
@@ -628,21 +637,21 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCellDropdown",
+        componentName: "⚠️ CSTitleDropdownCell",
         names: [
             "Cells/__Light/Action/Dropdown",
             "Cells/_Dark/Action/Dropdown",
         ]
     },
     {
-        componentName: "⚠️ CSCellDivider",
+        componentName: "⚠️ CSDividerCell",
         names: [
             "Cells/__Light/Divider",
             "Cells/_Dark/Divider",
         ]
     },
     {
-        componentName: "⚠️ CSCellBase",
+        componentName: "⚠️ CSBaseCell",
         names: [
             "Cells/__Light/_Base/_Default",
             "Cells/__Light/_Base/Active",
@@ -651,7 +660,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCellCaption",
+        componentName: "🌈 CSCaptionCell",
         names: [
             "Cells/__Light/Text only/Caption",
             "Cells/__Light/With icon/Caption",
@@ -660,14 +669,14 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCellToDo",
+        componentName: "⚠️ CSToDoCell",
         names: [
             "Cells/__Light/Action/To-do",
             "Cells/_Dark/Action/To-do",
         ]
     },
     {
-        componentName: "⚠️ CSCellButton",
+        componentName: "🌈 CSButtonCell",
         names: [
             "Cells/_Dark/Button/Center/Destructive",
             "Cells/_Dark/Button/Center/Loading",
@@ -692,7 +701,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSCellHeader",
+        componentName: "⚠️ CSHeader{accessory}Cell",
         names: [
             "Cells/__Light/Heading/Header",
             "Cells/_Dark/Heading/Header",
@@ -700,7 +709,7 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSCellLargeHeader",
+        componentName: "⚠️ CSLargeHeader{accessory}Cell",
         names: [
             "Cells/__Light/Heading/Large Header",
             "Cells/_Dark/Heading/Large Header",
@@ -708,7 +717,7 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSCellOverlineHeader",
+        componentName: "⚠️ CSOverlineHeader{accessory}Cell",
         names: [
             "Cells/__Light/Heading/Overline + Header",
             "Cells/_Dark/Heading/Overline + Header",
@@ -716,14 +725,14 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSCellProduct",
+        componentName: "⚠️ CSProduct{accessory}",
         names: [
             "Cells/__Light/Product",
             "Cells/_Dark/Product",
         ],
     },
     {
-        componentName: "⚠️ CSCellDetail",
+        componentName: "⚠️ CSDetailCell",
         names: [
             "Cells/__Light/Detail/Tag",
             "Cells/__Light/Detail/Icon",
@@ -732,21 +741,21 @@ const symbols = [
         ],
     },
     {
-        componentName: "⚠️ CSCellContent",
+        componentName: "⚠️ CSContentCell",
         names: [
             "Cells/__Light/Content",
             "Cells/_Dark/Content",
         ],
     },
     {
-        componentName: "⚠️ CSCellList",
+        componentName: "⚠️ CSListCell",
         names: [
             "Cells/__Light/Text only/List",
             "Cells/_Dark/Text only/List",
         ],
     },
     {
-        componentName: "⚠️ CSCellLabelValue",
+        componentName: "⚠️ CSLabelValueCell",
         names: [
             "Cells/__Light/Text only/Label +  Value + Description",
             "Cells/__Light/With icon/Label +  Value + Description",
@@ -757,7 +766,7 @@ const symbols = [
         ],
     },
     {
-        componentName: "⚠️ CSCellCrossSell",
+        componentName: "⚠️ CSCrossSellCell",
         names: [
             "Cells/__Light/With icon/CTA",
             "Cells/_Dark/With icon/CTA",
@@ -787,7 +796,7 @@ const symbols = [
         overrides: formOverrides
     },
     {
-        componentName: "⚠️ CSFormInput",
+        componentName: "🌈 CSFormField",
         names: [
             "Forms/_Dark/☞ Field/Input/Disabled",
             "Forms/__Light/☞ Field/Input/Disabled",
