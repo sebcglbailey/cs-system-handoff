@@ -1,45 +1,27 @@
 const symbols = [
 	{
-		componentName: "🌈 Accordion",
+		componentName: "🛠 Accordion",
 		names: [
-			"Accordion/01 Header/02 XS-S/03 Text Only/Basic",
-			"Accordion/01 Header/02 XS-S/03 Text Only/Description",
-			"Accordion/01 Header/01 M-XL/03 Text Only/Basic",
-			"Accordion/01 Header/01 M-XL/03 Text Only/2 Columns",
-			"Accordion/01 Header/01 M-XL/03 Text Only/3 Columns",
-			"Accordion/01 Header/02 XS-S/02 Icon/Basic",
-			"Accordion/01 Header/02 XS-S/02 Icon/Description",
-			"Accordion/01 Header/01 M-XL/02 Icon/2 Columns",
-			"Accordion/01 Header/01 M-XL/02 Icon/3 Columns",
-			"Accordion/01 Header/02 XS-S/01 Logo/Basic",
-			"Accordion/01 Header/02 XS-S/01 Logo/Balance",
-			"Accordion/01 Header/01 M-XL/01 Logo/2 Columns",
-			"Accordion/01 Header/01 M-XL/01 Logo/3 Columns"
+			"Accordion [NEW]/Header/Text only/Title",
+			"Accordion [NEW]/Header/Text only/Title + Description",
+			"Accordion [NEW]/Header/Text only/Title + Link",
+			"Accordion [NEW]/Header/With icon/Title",
+			"Accordion [NEW]/Header/With icon/Title + Description",
+			"Accordion [NEW]/Header/With icon/Title + Link",
 		]
 	},
 	{
-		componentName: "🌈 Accordion.ContentSection",
+		componentName: "🛠 Accordion.Content",
 		names: [
-			"Accordion/02 Content/04 Details/02 XS-S",
-			"Accordion/02 Content/04 Details/01 M-XL"
-		]
-	},
-	{
-		componentName: "🌈 Accordion.ContentAccordion",
-		names: [
-			"Accordion/02 Content/03 Content Accordion/02 XS-S/01 Closed",
-			"Accordion/02 Content/03 Content Accordion/02 XS-S/02 Open",
-			"Accordion/02 Content/03 Content Accordion/01 M-XL/01 Closed",
-			"Accordion/02 Content/03 Content Accordion/01 M-XL/02 Open"
-		]
-	},
-	{
-		componentName: "🌈 Accordion.ContentAccordionList",
-		names: [
-			"Accordion/02 Content/03 Content Accordion/02 XS-S/04 Content Open",
-			"Accordion/02 Content/03 Content Accordion/02 XS-S/03 Content",
-			"Accordion/02 Content/03 Content Accordion/01 M-XL/04 Content Open",
-			"Accordion/02 Content/03 Content Accordion/01 M-XL/03 Content"
+			"Accordion [NEW]/Content/Small/Details",
+			"Accordion [NEW]/Content/Small/_Layout",
+			"Accordion [NEW]/Content/Medium/Details",
+			"Accordion [NEW]/Content/Medium/_Layout",
+			"Accordion [NEW]/Content/Large/Details",
+			"Accordion [NEW]/Content/Large/_Layout",
+			"Accordion [NEW]/Content/Medium/Information",
+			"Accordion [NEW]/Content/Large/Information",
+			"Accordion [NEW]/Content/Small/Information",
 		]
 	},
 	{
