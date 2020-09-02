@@ -725,7 +725,7 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSProduct{accessory}",
+        componentName: "⚠️ CSProductCell",
         names: [
             "Cells/__Light/Product",
             "Cells/_Dark/Product",

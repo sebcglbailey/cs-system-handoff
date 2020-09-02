@@ -26,13 +26,15 @@ const getOverrides = (layer, symbol) => {
     if (filter.length >= 1) {
       if (override.replaceName) {
         layer.name = filter[0].componentName
-        layer.name.replace("{accessory}", "")
+        layer.name = layer.name.replace("{accessory}", "")
       } else if (override.addAccessoryToName) {
-        layer.name.replace("{accessory}", filter[0].componentNameAddition)
+        layer.name = layer.name.replace("{accessory}", filter[0].componentNameAddition)
       } else {
         layer.name += filter[0].componentNameAddition
-        layer.name.replace("{accessory}", "")
+        layer.name = layer.name.replace("{accessory}", "")
       }
+    } else {
+      layer.name = layer.name.replace("{accessory}", "")
     }
   })
 
