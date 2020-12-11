@@ -988,12 +988,12 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSNavModal",
+        componentName: "⚠️ CSLargeNavBar",
         names: [
-            "Navigation/__Light/Navigation bar/Modal",
-            "Navigation/__Light/Navigation bar/Modal navigation",
-            "Navigation/_Dark/Navigation bar/Modal",
-            "Navigation/_Dark/Navigation bar/Modal navigation",
+            "Navigation/__Light/Navigation bar/Large",
+            "Navigation/__Light/Navigation bar/Large navigation",
+            "Navigation/_Dark/Navigation bar/Large",
+            "Navigation/_Dark/Navigation bar/Large navigation",
         ]
     },
     {
