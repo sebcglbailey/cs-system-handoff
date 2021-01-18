@@ -10,40 +10,63 @@ const document = sketch.Document.getSelectedDocument();
 let libraryCheck = "WebApp";
 let typeCheck = true;
 
-const getOverrides = (layer, symbol) => {
+function getOverrides(layer, symbol) {
 
-  symbol.overrides.forEach(override => {
-    const overrideName = override.overrideName
-    const overrideSymbol = layer.overrides.filter(symbolOverride => {
-      return symbolOverride?.affectedLayer?.name == overrideName
-    })
-    let overrideSymbolName = String(overrideSymbol[0]?.sketchObject.children()[0]?.master().name())
-
-    let filter = override.options.filter(overrideOption => {
-      return overrideOption.names.includes(overrideSymbolName)
-    })
-
-    if (filter.length >= 1) {
-      if (override.replaceName) {
-        layer.name = filter[0].componentName
-        layer.name = layer.name.replace("{accessory}", "")
-      } else if (override.addAccessoryToName) {
-        layer.name = layer.name.replace("{accessory}", filter[0].componentNameAddition)
-      } else {
-        layer.name += filter[0].componentNameAddition
-        layer.name = layer.name.replace("{accessory}", "")
-      }
-    } else {
-      layer.name = layer.name.replace("{accessory}", "")
-    }
+  const overrideNames = symbol.overrides.map(option => {
+    return option.overrideName
   })
 
+  let overrides = layer.overrides.filter(override => {
+    return override.editable && overrideNames.includes(override.affectedLayer?.name)
+  })
+
+  overrides.forEach((override, index) => {
+    const name = override.affectedLayer?.name
+    let overrideSymbol = symbol.overrides.filter(overrideObj => {
+      return overrideObj.overrideName == name
+    })[0]
+
+
+    if (!overrideSymbol || !overrides.value) {
+      layer.name = layer.name.replace("{override}", "")
+      return
+    }
+
+    let optionName =
+      override &&
+        override.sketchObject &&
+        override.sketchObject.children &&
+        override.sketchObject.children()[0] &&
+        override.sketchObject.children()[0].master &&
+        override.sketchObject.children()[0].master().name ?
+        String(override.sketchObject.children()[0]?.master().name()) :
+        null
+
+    let overrideFilter = overrideSymbol.options.filter(option => {
+      return option.names.includes(optionName)
+    })[0]
+
+    if (!overrideFilter) {
+      layer.name = layer.name.replace("{override}", "")
+    } else {
+      if (overrideFilter.replaceName) {
+        layer.name = filter[0].componentName
+        layer.name = layer.name.replace("{override}", "")
+      } else if (overrideFilter.addAccessoryToName) {
+        layer.name = layer.name.replace("{override}", overrideFilter[0].componentNameAddition)
+      } else {
+        layer.name += filter[0].componentNameAddition
+        layer.name = layer.name.replace("{override}", "")
+      }
+    }
+
+  })
 
 }
 
-const iterateLayers = (layers, index) => {
+function iterateLayers(layers, index) {
 
-  layers.forEach((layer, index) => {
+  layers.forEach(layer => {
 
     if (layer.layers) {
       iterateLayers(layer.layers);
@@ -63,7 +86,9 @@ const iterateLayers = (layers, index) => {
         return symbol.names.includes(symbolName);
       });
 
-      if (
+      if (filter.length == 0) {
+        return;
+      } else if (
         filter.length >= 1 &&
         filter[0].componentName &&
         filter[0].componentName.length > 0
@@ -101,7 +126,6 @@ const iterateLayers = (layers, index) => {
 
 export default function (context) {
 
-  let pages = document.pages;
   let selectedLayers = document.selectedLayers;
   let selectedPage = document.selectedPage;
 
@@ -110,7 +134,7 @@ export default function (context) {
       libraryCheck = library
       typeCheck = includeType
 
-      let layers = selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage ? selectedPage.layers : pages
+      let layers = selectedLayers && selectedLayers.length > 0 ? selectedLayers : selectedPage ? selectedPage.layers : selectedPage.layers
 
       iterateLayers(layers)
     }
