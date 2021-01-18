@@ -10,22 +10,21 @@ const document = sketch.Document.getSelectedDocument();
 let libraryCheck = "WebApp";
 let typeCheck = true;
 
-function getOverrides(layer, symbol) {
+const getOverrides = (layer, symbol) => {
 
   const overrideNames = symbol.overrides.map(option => {
-    return option.overrideName
+    return option.overrideName.toLowerCase()
   })
 
   let overrides = layer.overrides.filter(override => {
-    return override.editable && overrideNames.includes(override.affectedLayer?.name)
+    return override.editable && overrideNames.includes(override.affectedLayer?.name.toLowerCase())
   })
 
-  overrides.forEach((override, index) => {
+  overrides.forEach(override => {
     const name = override.affectedLayer?.name
     let overrideSymbol = symbol.overrides.filter(overrideObj => {
-      return overrideObj.overrideName == name
+      return overrideObj.overrideName.toLowerCase() == name.toLowerCase()
     })[0]
-
 
     if (!overrideSymbol || !overrides.value) {
       layer.name = layer.name.replace("{override}", "")
@@ -64,7 +63,7 @@ function getOverrides(layer, symbol) {
 
 }
 
-function iterateLayers(layers, index) {
+const iterateLayers = (layers, index) => {
 
   layers.forEach(layer => {
 
