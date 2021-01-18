@@ -579,7 +579,7 @@ const symbols = [
     // ------------------------------------
 
     {
-        componentName: "🌈 CSTitle{accessory}Cell",
+        componentName: "🌈 CSTitle{override}Cell",
         names: [
             "Cells/__Light/Text only/Title",
             "Cells/__Light/With icon/Title",
@@ -589,7 +589,7 @@ const symbols = [
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "🌈 CSTitleDescription{accessory}Cell",
+        componentName: "🌈 CSTitleDescription{override}Cell",
         names: [
             "Cells/__Light/Text only/Title + Description",
             "Cells/__Light/With icon/Title + Description",
@@ -599,7 +599,7 @@ const symbols = [
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "⚠️ CSDescriptionTitle{accessory}Cell",
+        componentName: "⚠️ CSDescriptionTitle{override}Cell",
         names: [
             "Cells/__Light/Text only/Description + Title",
             "Cells/__Light/With icon/Description + Title",
@@ -609,7 +609,7 @@ const symbols = [
         overrides: cellRightAccOverrides
     },
     {
-        componentName: "🌈 CSValue{accessory}Cell",
+        componentName: "🌈 CSValue{override}Cell",
         names: [
             "Cells/__Light/Text only/Value",
             "Cells/_Dark/Text only/Value",
@@ -701,7 +701,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSHeader{accessory}Cell",
+        componentName: "⚠️ CSHeader{override}Cell",
         names: [
             "Cells/__Light/Heading/Header",
             "Cells/_Dark/Heading/Header",
@@ -709,7 +709,7 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSLargeHeader{accessory}Cell",
+        componentName: "⚠️ CSLargeHeader{override}Cell",
         names: [
             "Cells/__Light/Heading/Large Header",
             "Cells/_Dark/Heading/Large Header",
@@ -717,7 +717,7 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSOverlineHeader{accessory}Cell",
+        componentName: "⚠️ CSOverlineHeader{override}Cell",
         names: [
             "Cells/__Light/Heading/Overline + Header",
             "Cells/_Dark/Heading/Overline + Header",
