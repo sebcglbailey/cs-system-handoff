@@ -57,7 +57,7 @@ const cellRightAccOverrides = [
 
 const cellHeaderRightAccOverrides = [
     {
-        overrideName: "Right Accessory",
+        overrideName: "Right accessory",
         options: [
             {
                 componentNameAddition: ": Number",
@@ -660,7 +660,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "🌈 CSCaptionCell",
+        componentName: "🌈 CSCellCaption",
         names: [
             "Cells/__Light/Text only/Caption",
             "Cells/__Light/With icon/Caption",
@@ -676,7 +676,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "🌈 CSButtonCell",
+        componentName: "🌈 CSCellButton",
         names: [
             "Cells/_Dark/Button/Center/Destructive",
             "Cells/_Dark/Button/Center/Loading",
@@ -701,7 +701,7 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSHeader{override}Cell",
+        componentName: "🌈 CSTableViewSectionHeader",
         names: [
             "Cells/__Light/Heading/Header",
             "Cells/_Dark/Heading/Header",
@@ -709,7 +709,7 @@ const symbols = [
         overrides: cellHeaderRightAccOverrides
     },
     {
-        componentName: "⚠️ CSLargeHeader{override}Cell",
+        componentName: "🌈 CSTableViewSectionLargeHeader",
         names: [
             "Cells/__Light/Heading/Large Header",
             "Cells/_Dark/Heading/Large Header",
@@ -766,7 +766,7 @@ const symbols = [
         ],
     },
     {
-        componentName: "⚠️ CSCrossSellCell",
+        componentName: "⚠🌈 CSCrossSellCell",
         names: [
             "Cells/__Light/With icon/CTA",
             "Cells/_Dark/With icon/CTA",
