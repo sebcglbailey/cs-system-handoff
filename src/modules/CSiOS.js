@@ -223,9 +223,36 @@ const formOverrides = [
 const symbols = [
 
     // ------------------------------------
-    // GLBAL
+    // GLOBAL
     // ------------------------------------
 
+    {
+        componentName: "⚠️ CSProgressBar",
+        names: [
+            "_global/__Light/Progress bar/00%",
+            "_global/_Dark/Progress bar/00%",
+            "_global/__Light/Progress bar/10%",
+            "_global/_Dark/Progress bar/10%",
+            "_global/__Light/Progress bar/20%",
+            "_global/_Dark/Progress bar/20%",
+            "_global/__Light/Progress bar/25%",
+            "_global/_Dark/Progress bar/25%",
+            "_global/__Light/Progress bar/40%",
+            "_global/_Dark/Progress bar/40%",
+            "_global/__Light/Progress bar/50%",
+            "_global/_Dark/Progress bar/50%",
+            "_global/__Light/Progress bar/60%",
+            "_global/_Dark/Progress bar/60%",
+            "_global/__Light/Progress bar/75%",
+            "_global/_Dark/Progress bar/75%",
+            "_global/__Light/Progress bar/80%",
+            "_global/_Dark/Progress bar/80%",
+            "_global/__Light/Progress bar/90%",
+            "_global/_Dark/Progress bar/90%",
+            "_global/__Light/Progress bar/100%",
+            "_global/_Dark/Progress bar/100%",
+        ]
+    },
     {
         componentName: "⚠️ CSTag",
         names: [
@@ -260,6 +287,27 @@ const symbols = [
         names: [
             "_global/__Light/Tag/Outline",
             "_global/_Dark/Tag/Outline",
+        ]
+    },
+    {
+        componentName: "⚠️ CSTagExclusive",
+        names: [
+            "_global/__Light/Tag/Exclusive [Smart]",
+            "_global/__Light/Tag/Exclusive [Fixed]",
+        ]
+    },
+    {
+        componentName: "⚠️ CSTagComplex",
+        names: [
+            "_global/__Light/Tag/Complex",
+            "_global/_Dark/Tag/Complex",
+        ]
+    },
+    {
+        componentName: "⚠️CSTipMessage",
+        names: [
+            "_global/_Dark/Tip message",
+            "_global/__Light/Tip message",
         ]
     },
     {
@@ -495,6 +543,8 @@ const symbols = [
             "Cards/__Light/_Base [Dismissable]",
             "Cards/_Dark/_Base",
             "Cards/_Dark/_Base [Dismissable]",
+            "Cards/_Dark/_Base [Information]",
+            "Cards/__Light/_Base [Information]",
         ]
     },
     {
@@ -557,6 +607,7 @@ const symbols = [
             "Cards/_Dark/Title + Information + CTA",
             "Cards/__Light/Icon + Title + Description",
             "Cards/_Dark/Icon + Title + Description",
+            "Cards/__Light/Icon + Information",
         ]
     },
     {
@@ -573,11 +624,48 @@ const symbols = [
             "Cards/_Dark/Overline + Value",
         ]
     },
+    {
+        componentName: "⚠️ CSCardCoachingProgress",
+        names: [
+            "Cards/__Light/Icon + Title + Progress",
+            "Cards/_Dark/Icon + Title + Progress",
+        ]
+    },
+    {
+        componentName: "⚠️ CSCardOfferPicker",
+        names: [
+            "Cards/__Light/Image + Title",
+            "Cards/_Dark/Image + Title",
+        ]
+    },
+    {
+        componentName: "⚠️ CSCardTask",
+        names: [
+            "Cards/__Light/Icon + Description",
+            "Cards/_Dark/Icon + Description",
+        ]
+    },
 
     // ------------------------------------
     // CELLS
     // ------------------------------------
 
+    {
+        componentName: "⚠️ CSCell",
+        names: [
+            "Cells/__Light/_Base/_Default",
+            "Cells/__Light/_Base/Active",
+            "Cells/_Dark/_Base/_Default",
+            "Cells/_Dark/_Base/Active",
+        ]
+    },
+    {
+        componentName: "⚠️ CSExclusiveCell",
+        names: [
+            "Cells/__Light/_Base/Exclusive",
+            "Cells/_Dark/_Base/Exclusive",
+        ]
+    },
     {
         componentName: "🌈 CSTitle{override}Cell",
         names: [
@@ -614,7 +702,8 @@ const symbols = [
             "Cells/__Light/Text only/Value",
             "Cells/_Dark/Text only/Value",
             "Cells/__Light/With icon/Value",
-            "Cells/_Dark/With icon/Value"
+            "Cells/_Dark/With icon/Value",
+            "Cells/_Dark/Text only/ Value",
         ],
         overrides: cellRightAccOverrides
     },
@@ -648,15 +737,6 @@ const symbols = [
         names: [
             "Cells/__Light/Divider",
             "Cells/_Dark/Divider",
-        ]
-    },
-    {
-        componentName: "⚠️ CSBaseCell",
-        names: [
-            "Cells/__Light/_Base/_Default",
-            "Cells/__Light/_Base/Active",
-            "Cells/_Dark/_Base/_Default",
-            "Cells/_Dark/_Base/Active",
         ]
     },
     {
@@ -727,8 +807,10 @@ const symbols = [
     {
         componentName: "⚠️ CSProductCell",
         names: [
-            "Cells/__Light/Product",
-            "Cells/_Dark/Product",
+            "Cells/__Light/Product/Other ",
+            "Cells/__Light/Product/Core ",
+            "Cells/_Dark/Product/Other ",
+            "Cells/_Dark/Product/Core",
         ],
     },
     {
@@ -771,6 +853,114 @@ const symbols = [
             "Cells/__Light/With icon/CTA",
             "Cells/_Dark/With icon/CTA",
         ],
+    },
+
+    // ------------------------------------
+    // CHAT
+    // ------------------------------------
+
+    {
+        componentName: "⚠️ CSChatIncoming",
+        names: [
+            "Chat/__Light/Incoming",
+            "Chat/_Dark/Incoming",
+            "Chat/__Light/Writing",
+            "Chat/_Dark/Writing",
+        ]
+    },
+    {
+        componentName: "⚠️ CSChatOutgoing",
+        names: [
+            "Chat/__Light/Outgoing",
+            "Chat/_Dark/Outgoing",
+        ]
+    },
+    {
+        componentName: "⚠️ CSChatImage",
+        names: [
+            "Chat/__Light/Incoming",
+            "Chat/_Dark/Incoming",
+        ]
+    },
+    {
+        componentName: "⚠️ CSChatError",
+        names: [
+            "Chat/__Light/Not sent",
+            "Chat/_Dark/Not sent",
+        ]
+    },
+
+    // ------------------------------------
+    // DONUTS
+    // ------------------------------------
+    {
+        componentName: "⚠️ CSDonutPrimary",
+        names: [
+            "Donuts/__Primary/Score/05 Epsilon",
+            "Donuts/__Primary/Score/04 Delta",
+            "Donuts/__Primary/Score/03 Gamma",
+            "Donuts/__Primary/Score/02 Beta",
+            "Donuts/__Primary/Score/01 Alpha",
+            "Donuts/__Primary/Score/Theta",
+            "Donuts/__Primary/Countdown",
+            "Donuts/__Primary/Offers/Car Finance",
+            "Donuts/__Primary/Offers/Loans",
+            "Donuts/__Primary/Offers/Cards",
+            "Donuts/__Primary/Change/Stable",
+            "Donuts/__Primary/Change/Down",
+            "Donuts/__Primary/Change/Up",
+            "Donuts/__Primary/Short Term Debt/Stable",
+            "Donuts/__Primary/Short Term Debt/Up",
+            "Donuts/__Primary/Short Term Debt/Down",
+            "Donuts/__Primary/Long Term Debt/Stable",
+            "Donuts/__Primary/Long Term Debt/Up",
+            "Donuts/__Primary/Long Term Debt/Down",
+        ]
+    },
+    {
+        componentName: "⚠️ CSDonutSecondary",
+        names: [
+            "Donuts/_Secondary/Default",
+            "Donuts/_Secondary/Number",
+        ]
+    },
+    {
+        componentName: "⚠️ CSDonutTertiary",
+        names: [
+            "Donuts/_Tertiary/Start",
+            "Donuts/_Tertiary/Continue",
+            "Donuts/_Tertiary/Tasks",
+        ]
+    },
+    {
+        componentName: "⚠️ CSDonutSimple",
+        names: [
+            "Donuts/_Simple/__Light/Large/01 Alpha",
+            "Donuts/_Simple/_Dark/Large/01 Alpha",
+            "Donuts/_Simple/__Light/Small/01 Alpha",
+            "Donuts/_Simple/__Light/Large/00 Theta",
+            "Donuts/_Simple/_Dark/Large/00 Theta",
+            "Donuts/_Simple/__Light/Small/00 Theta",
+            "Donuts/_Simple/__Light/Large/02 Beta",
+            "Donuts/_Simple/_Dark/Large/02 Beta",
+            "Donuts/_Simple/__Light/Small/02 Beta",
+            "Donuts/_Simple/__Light/Large/03 Gamma",
+            "Donuts/_Simple/_Dark/Large/03 Gamma",
+            "Donuts/_Simple/__Light/Small/03 Gamma",
+            "Donuts/_Simple/__Light/Large/04 Delta",
+            "Donuts/_Simple/_Dark/Large/04 Delta",
+            "Donuts/_Simple/__Light/Small/04 Delta",
+            "Donuts/_Simple/__Light/Large/05 Epsilon",
+            "Donuts/_Simple/_Dark/Large/05 Epsilon",
+            "Donuts/_Simple/__Light/Small/05 Epsilon",
+            "Donuts/_Simple/_Dark/Small/05 Epsilon",
+            "Donuts/_Simple/_Dark/Small/04 Delta",
+            "Donuts/_Simple/_Dark/Small/03 Gamma",
+            "Donuts/_Simple/_Dark/Small/02 Beta",
+            "Donuts/_Simple/_Dark/Small/01 Alpha",
+            "Donuts/_Simple/_Dark/Small/00 Theta",
+            "Donuts/_Simple/Comparison",
+        ]
     },
 
     // ------------------------------------
@@ -929,12 +1119,25 @@ const symbols = [
         ]
     },
     {
-        componentName: "⚠️ CSFormMultiSelect",
+        componentName: "⚠️ CSFormMultiSelectSmall",
         names: [
-            "Forms/__Light/Multi Select/_Default",
-            "Forms/_Dark/Multi Select/_Default",
-            "Forms/__Light/Multi Select/Active",
-            "Forms/_Dark/Multi Select/Active",
+            "Forms/__Light/Multi Select/Small/_Default",
+            "Forms/__Light/Multi Select/Small/Disabled",
+            "Forms/_Dark/Multi Select/Small/_Default",
+            "Forms/_Dark/Multi Select/Small/Disabled",
+            "Forms/__Light/Multi Select/Small/Active",
+            "Forms/_Dark/Multi Select/Small/Active",
+        ]
+    },
+    {
+        componentName: "⚠️ CSFormMultiSelectLarge",
+        names: [
+            "Forms/__Light/Multi Select/Large/_Default",
+            "Forms/__Light/Multi Select/Large/Disabled",
+            "Forms/__Light/Multi Select/Large/Active",
+            "Forms/_Dark/Multi Select/Large/_Default",
+            "Forms/_Dark/Multi Select/Large/Disabled",
+            "Forms/_Dark/Multi Select/Large/Active",
         ]
     },
 
@@ -992,6 +1195,19 @@ const symbols = [
         ]
     },
     {
+        componentName: "⚠️ CSNavExtendedOptions",
+        names: [
+            "Navigation/_Dark/Navigation Bar/_iPhone 8-/Extended options [scrolled]",
+            "Navigation/_Dark/Navigation Bar/_iPhone 8-/Extended options",
+            "Navigation/__Light/Navigation Bar/_iPhone 8-/Extended options [scrolled]",
+            "Navigation/__Light/Navigation Bar/_iPhone 8-/Extended options",
+            "Navigation/_Dark/Navigation Bar/_iPhone X+/Extended options",
+            "Navigation/__Light/Navigation Bar/_iPhone X+/Extended options [scrolled]",
+            "Navigation/__Light/Navigation Bar/_iPhone X+/Extended options",
+            "Navigation/_Dark/Navigation Bar/_iPhone X+/Extended options [scrolled]",
+        ]
+    },
+    {
         componentName: "⚠️ CSNavSecondary",
         names: [
             "Navigation/__Light/Secondary/Right",
@@ -1030,6 +1246,50 @@ const symbols = [
     },
 
     // ------------------------------------
+    // RATINGS
+    // ------------------------------------
+
+    {
+        componentName: "⚠️ CSStars",
+        names: [
+            "Ratings/🚫 overrides/Stars/5",
+            "Ratings/🚫 overrides/Stars/4.5",
+            "Ratings/🚫 overrides/Stars/4",
+            "Ratings/🚫 overrides/Stars/3.5",
+            "Ratings/🚫 overrides/Stars/3",
+            "Ratings/🚫 overrides/Stars/2.5",
+            "Ratings/🚫 overrides/Stars/2",
+            "Ratings/🚫 overrides/Stars/1.5",
+            "Ratings/🚫 overrides/Stars/1",
+            "Ratings/🚫 overrides/Stars/0.5",
+            "Ratings/🚫 overrides/Stars/0",
+        ]
+    },
+    {
+        componentName: "⚠️ CSRatingsStars",
+        names: [
+            "Ratings/__Light/Stars/Stacked",
+            "Ratings/_Dark/Stars/Stacked",
+            "Ratings/__Light/Stars/Inline",
+            "Ratings/_Dark/Stars/Inline",
+        ]
+    },
+    {
+        componentName: "⚠️ CSRatingsCategory",
+        names: [
+            "Ratings/__Light/Category",
+            "Ratings/_Dark/Category",
+        ]
+    },
+    {
+        componentName: "⚠️ CSRatingsHero",
+        names: [
+            "Ratings/__Light/Hero rating",
+            "Ratings/_Dark/Hero rating",
+        ]
+    },
+
+    // ------------------------------------
     // TEXT
     // ------------------------------------
 
@@ -1044,6 +1304,20 @@ const symbols = [
             "Text/_Dark/Bullet/Primary Emphasis",
             "Text/_Dark/Bullet/Secondary",
             "Text/_Dark/Bullet/Positive Emphasis",
+        ]
+    },
+    {
+        componentName: "⚠️ CSOverline",
+        names: [
+            "Text/__Light/Overline",
+            "Text/_Dark/Overline",
+        ]
+    },
+    {
+        componentName: "⚠️ CSInformation",
+        names: [
+            "Text/__Light/Title + Description",
+            "Text/_Dark/Title + Description",
         ]
     },
 
